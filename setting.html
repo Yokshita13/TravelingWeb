@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="bg-img.png" alt="">
+            </div>
+            <div class="title">
+                <span>TRIP~WITH~US.com</span></div>
+        </nav>
+        <aside>
+            <ul>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa-solid fa-cannabis"></i><span>About</span></a></li>
+                <li><a href="service.html"><i class="fa-solid fa-user-gear"></i><span>Service</span></a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i><span>Contact</span></a></li>
+                <li><a href="setting.html"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>
+                <li><a href="notification.html"><i class="fa-solid fa-bell"></i><span>Notification</span></a></li>
+                <li><a href="help.html"><i class="fa-solid fa-cannabis"></i><span>Help</span></a></li>
+
+            </ul>
+        </aside>
+        <main>
+            <h1 class="heading">Settings</h1>
+            <div class="settings-group">
+                <div class="setting-item">
+                    <span class="span">Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="span">Email Notifications</span>
+                    <label class="switch">
+                        <input type="checkbox" id="emailNotificationsToggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="span">Enable Location</span>
+                    <label class="switch">
+                        <input type="checkbox" id="locationToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="span">Show Profile Publicly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="profilePublicToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span>Two-Factor Authentication</span>
+                    <label class="switch">
+                        <input type="checkbox" id="twoFactorToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="settingitem">
+                <span class="span">Language</span>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hn">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+            <div class="settingitem2">
+                <span class="span">Delete Account</span>
+                <button id="deleteAccountButton" class="danger">Delete</button>
+            </div>
+            
+            <div class="settingitem3">
+                <span class="span">Export Data</span>
+                <button id="exportDataButton">Export</button>
+            </div>
+            
+        
+            <div class="settingitem4">
+                <span class="span">Time Zone</span>
+                <select id="timeZoneSelect">
+                    <option selected="IST" value="UTC+5.5">India Standard Time (IST)</option>
+                    <option value="UTC-5">Eastern Standard Time (EST)</option>
+                    <option value="UTC+0">Greenwich Mean Time (GMT)</option>
+                    <option value="UTC+1">Central European Time (CET)</option>
+                </select>
+            </div>
+        
+            
+            <div class="settingitem5">
+                <span class="span">Text Size</span>
+                <select id="textSizeSelect">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            
+            
+            
+            <p id="statusMessage" class="status-message"></p>
+        </main>
+    </header>
+    <script src="setting.js"></script>
+</body>
+</html>
